@@ -1,4 +1,15 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
+
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +19,8 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 600px;
+    
 }
 
 
@@ -40,6 +53,9 @@ body{
     color: #ffffff;
     font-size: 1.125rem;
     position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
 
 }
 .header-menu a::after{
@@ -55,6 +71,86 @@ body{
 .header-menu a:hover:after{
     width: 100%;
     transition: 0.4s;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+.introducao-bg{
+    background: #000000;
+    color: #ffffff;
+    box-shadow: inset 0 -120px #ffffff;
+}
+a{
+    color: inherit; /*para erdar a propriedade de cor do conteiner*/
+}
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px 40px;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.introducao-img {
+    
+}
+.introducao img {
+    object-fit: cover;
+    border-radius: 4px;
+}
+.introducao-conteudo{
+    align-self: flex-end; /*deixar o conteudo ao final da div*/
+    padding-bottom: 200px;
+}
+.introducao h1 {
+    margin-bottom: 32px;
+    font-size: 64px;
+    line-height: 1.125; /*especificando o rem as linhas se sobrepoem*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+}
+.introducao p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #b2b2b2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+
+}
+.introducao h1 span{
+    color:#ffb000 ;
+}
+.introducao a {
+    background: linear-gradient(#ffb000 , #f2a50c) ;
+    padding: 16px 32px;
+    display: inline-block;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 #00000062;
+    text-transform: uppercase;
+    color: #332200;
+    font-size: 18px;
+    line-height: 1.33;
+   
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+
+
+}
+.introducao a:hover{
+    background: linear-gradient(#ffb60d, #a1670f);
+}
+@media(max-width: 1200px){
+    .introducao h1 {
+        font-size: 48px;
+
+    }
 }
 
 @media (max-width: 800px){
@@ -74,6 +170,29 @@ body{
     .header-menu a::after{
         display: none;
     }
+    .introducao-bg{
+        background: #111111;
+        padding-top: 40px;
+        box-shadow: inset 0 -60px white;
+    }
+    .introducao h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+    .introducao {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .introducao p {
+        font-size: 22px;
+    }
+    .introducao-conteudo{
+        padding-bottom: 0px;
+    }
+    .introducao img {
+        height: 300px;
+        width: 100%;
+    }
 }
 @media(max-width: 600px){
     .header-menu{
@@ -86,4 +205,11 @@ body{
     .header-menu a::after{
         display: none;
     }
+    .introducao p {
+        font-size: 16px;
+    }
+    .introducao a {
+        font-size: 16px ;
+    }
+
 }
