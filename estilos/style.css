@@ -1,4 +1,27 @@
 
+@import "./tipografia.css";
+
+@import "./componentes.css";
+
+@import "./cores.css";
+
+@import "./bicicletas.css";
+
+@import "./bicicletas-lista.css";
+
+
+@import "./header.css";
+
+@import "./introducao.css";
+
+@import "./tecnologia.css";
+
+
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
 
 /*font-family: 'Poppins', sans-serif;
@@ -15,6 +38,7 @@ font-family: 'Raleway', sans-serif;*/
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
     
 }
 body{
@@ -24,128 +48,18 @@ body{
 }
 
 
-.header-bg {
-    background-color: #000000;
-}
-.header{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    
 
-}
-.header-menu{
-    display: flex;
-    gap: 20px;
-    
-
-}
-.header-menu a {
-    padding: 16px 0px;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 1.125rem;
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    
-
-}
-.header-menu a::after{
-    content: "";
-    display: block;
-    width: 0%; 
-    height:2px ;
-    background: #ffffff;
-    margin-top: 4px;
-    position: absolute;
-
-}
-.header-menu a:hover:after{
-    width: 100%;
-    transition: 0.4s;
-}
 img{
     max-width: 100%;
     display: block;
-}
-.introducao-bg{
-    background: #000000;
-    color: #ffffff;
-    box-shadow: inset 0 -120px #ffffff;
-}
-a{
-    color: inherit; /*para erdar a propriedade de cor do conteiner*/
-}
-.introducao {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px 40px;
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.introducao-img {
     
 }
-.introducao img {
-    object-fit: cover;
+img[src$=".jpg"]{
+
     border-radius: 4px;
-}
-.introducao-conteudo{
-    align-self: flex-end; /*deixar o conteudo ao final da div*/
-    padding-bottom: 200px;
-}
-.introducao h1 {
-    margin-bottom: 32px;
-    font-size: 64px;
-    line-height: 1.125; /*especificando o rem as linhas se sobrepoem*/
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
 
 }
-.introducao p {
-    margin-bottom: 20px;
-    font-size: 24px;
-    line-height: 1.5;
-    color: #b2b2b2;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
 
-
-}
-.introducao h1 span{
-    color:#ffb000 ;
-}
-.introducao a {
-    background: linear-gradient(#ffb000 , #f2a50c) ;
-    padding: 16px 32px;
-    display: inline-block;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px 0 #00000062;
-    text-transform: uppercase;
-    color: #332200;
-    font-size: 18px;
-    line-height: 1.33;
-   
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-
-
-}
-.introducao a:hover{
-    background: linear-gradient(#ffb60d, #a1670f);
-}
 @media(max-width: 1200px){
     .introducao h1 {
         font-size: 48px;
@@ -156,7 +70,7 @@ a{
 @media (max-width: 800px){
 
     .header-menu a {
-        background-color: #111;
+        background-color: var(--cor-11);
         padding: 12px 16px;
         border-radius: 4px;
 
@@ -165,15 +79,15 @@ a{
         gap: 20px;
     }
     .header-menu a:hover{
-        background-color:#2e2e2e ;
+        background-color:var(--cor-10) ;
     }
     .header-menu a::after{
         display: none;
     }
     .introducao-bg{
-        background: #111111;
+        background: var(--cor-11);
         padding-top: 40px;
-        box-shadow: inset 0 -60px white;
+        box-shadow: inset 0 -60px var(--cor-0);
     }
     .introducao h1 {
         font-size: 32px;
@@ -208,8 +122,5 @@ a{
     .introducao p {
         font-size: 16px;
     }
-    .introducao a {
-        font-size: 16px ;
-    }
-
+    
 }

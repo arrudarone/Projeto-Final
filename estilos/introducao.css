@@ -1,0 +1,43 @@
+
+.introducao-bg{
+    background: #000000;
+    color: var(--cor-0);
+    box-shadow: inset 0 -120px var(--cor-0);
+    
+}
+a{
+    color: inherit; /*para erdar a propriedade de cor do conteiner*/
+}
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+
+}
+.introducao-img {
+    
+}
+.introducao img {
+    object-fit: cover;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+}
+.introducao-conteudo{
+    align-self: flex-end; /*deixar o conteudo ao final da div*/
+    padding-bottom: 200px;
+}
+.introducao h1 {
+    margin-bottom: 32px;
+    
+}
+.introducao p {
+    margin-bottom: 20px;
+    color: var(--cor-6);
+    
+
+
+}
+.introducao h1 span{
+    color:var(--p1) ;
+}
