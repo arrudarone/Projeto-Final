@@ -1,0 +1,22 @@
+.footer-bg{
+    background-color: black;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr;
+}
+.footer-info li, .footer-item li{
+    padding-bottom: 15px;
+}
+.footer h3 {
+    padding-bottom: 20px;
+}
+.footer-redes{
+    grid-column: 2;
+    display: flex;
+    gap: 20px;
+}
+.footer p {
+    grid-column: 1;
+    padding-top: 50px;
+}
