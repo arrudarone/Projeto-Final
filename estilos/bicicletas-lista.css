@@ -17,6 +17,9 @@
     estoura o conteiner*/
 
 }
+#bicicleta .bicicletas-lista ul {
+    padding: 0px 0px 20px 0px;
+}
 .bicicletas-lista li {
     flex: 1;
     min-width: 280px;
@@ -52,7 +55,10 @@
 .bicicletas-lista li span {
     padding-left: 20px;
 }
-
+.bicicletas-lista{
+    background-color: var(--cor-0);
+    color: var(--cor-12);
+}
 @media(max-width: 800px){
 
     .bicicletas-lista{
