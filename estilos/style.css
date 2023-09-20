@@ -33,7 +33,15 @@
 
 @import "./vantagens.css";
 
+@import "./contato.css";
+
+@import"./formulario.css";
+
+@import "./lojas.css";
+
 @import "../bicicletas/bicicleta-css/bicicleta.css";
+
+@import "../bicicletas/bicicleta-css/seguro.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway&display=swap');
 

@@ -40,6 +40,8 @@
     color: #332200;
     font-size: 18px;
     line-height: 1.33;
+    border: none;
+    cursor: pointer;
    
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
